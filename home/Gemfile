@@ -1,0 +1,9 @@
+source 'https://rubygems.org'
+
+gem 'homesick'
+gem 'soloist'
+
+gem 'af'
+gem 'chef'
+gem 'berkshelf'
+gem 'jekyll'
