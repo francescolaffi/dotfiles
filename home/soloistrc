@@ -10,15 +10,14 @@ recipes:
 - pivotal_workstation::workspace_directory
 
 # dev & misc tools
-- pivotal_workstation::zsh
-- pivotal_workstation::oh_my_zsh
+- my_workstation::oh_my_zsh
+- pivotal_workstation::rbenv
+- pivotal_workstation::gem_setup
 - pivotal_workstation::git
 - pivotal_workstation::hub
 - pivotal_workstation::git_config_global_defaults
 - pivotal_workstation::php54
 - pivotal_workstation::composer
-- pivotal_workstation::rbenv
-- pivotal_workstation::gem_setup
 - pivotal_workstation::source_code_pro_font
 - pivotal_workstation::gnu-tar
 - pivotal_workstation::wget
@@ -27,6 +26,7 @@ recipes:
 
 # dev apps
 - pivotal_workstation::iterm2
+- pivotal_workstation::diff_merge
 - pivotal_workstation::sublime_text
 - pivotal_workstation::sourcetree
 - pivotal_workstation::github_for_mac
@@ -56,7 +56,6 @@ recipes:
 - pivotal_workstation::defaults_fast_key_repeat_rate
 - pivotal_workstation::enable_assistive_devices
 - pivotal_workstation::mouse_locator
-- pivotal_workstation::osx_aqua_color_preferences
 - pivotal_workstation::dock_preferences
 - pivotal_workstation::set_finder_show_all_hd_on_desktop
 - pivotal_workstation::set_finder_show_user_home_in_sidebar
