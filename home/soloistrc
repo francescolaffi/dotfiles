@@ -48,7 +48,6 @@ recipes:
 - pivotal_workstation::google_drive
 - pivotal_workstation::libreoffice
 - pivotal_workstation::nvalt
-- pivotal_workstation::nvalt
 - pivotal_workstation::screen_sharing_app
 
 # pref & options
