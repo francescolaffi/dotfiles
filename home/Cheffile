@@ -1,6 +1,21 @@
 site 'http://community.opscode.com/api/v1'
 
-cookbook 'pivotal_workstation',
-  :github =>  'pivotal/pivotal_workstation'
 cookbook 'my_workstation',
   :path => '/Users/francesco/.homesick/repos/francescolaffi/dotfiles/my_workstation_cookbook'
+  
+
+cookbook 'pivotal_workstation',
+  :git => 'git://github.com/pivotal-sprout/sprout.git',
+  :path => 'pivotal_workstation'
+
+cookbook 'sprout-osx-apps',
+  :git => 'git://github.com/pivotal-sprout/sprout.git',
+  :path => 'sprout-osx-apps'
+
+cookbook 'sprout-osx-settings',
+  :git => 'git://github.com/pivotal-sprout/sprout.git',
+  :path => 'sprout-osx-settings'
+
+cookbook 'osx',
+  :git => 'git://github.com/pivotal-sprout/sprout.git',
+  :path => 'osx'
