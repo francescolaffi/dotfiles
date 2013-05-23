@@ -57,6 +57,9 @@ if which hub > /dev/null; then eval "$(hub alias -s)"; fi
 # node modules
 export PATH=/usr/local/share/npm/bin:$PATH
 
+# python stuff bins
+export PATH=/usr/local/share/python:$PATH
+
 # rbenv
 export RBENV_ROOT="$HOME/.rbenv"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
