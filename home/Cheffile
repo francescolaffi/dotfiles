@@ -1,7 +1,7 @@
 site 'http://community.opscode.com/api/v1'
 
 cookbook 'my_workstation',
-  :path => '/Users/francesco/.homesick/repos/francescolaffi/dotfiles/my_workstation_cookbook'
+  :path => '.homesick/repos/francescolaffi/dotfiles/my_workstation_cookbook'
   
 
 cookbook 'pivotal_workstation',

@@ -69,3 +69,6 @@ node_attributes:
     default_ruby: 2.0.0-p0
   dock_preferences:
     autohide: false
+  bash_it: # stay out of my way
+    dir: '/tmp/bash_it'
+    bashrc_path: '/tmp/bash_it/.bash_profile'
