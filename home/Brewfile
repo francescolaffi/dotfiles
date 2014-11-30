@@ -1,0 +1,168 @@
+update
+upgrade
+
+# misc taps
+tap homebrew/binary
+tap homebrew/dupes
+tap homebrew/versions
+tap homebrew/homebrew-php
+
+# setup brew cask
+install caskroom/cask/brew-cask
+
+# system
+install apple-gcc42
+install curl-ca-bundle
+install osxfuse
+install ntfs-3g
+cask install xquartz
+
+# shell
+install zsh
+install zsh-completions
+install bash
+install bash-completion
+install fasd
+
+# misc cli tools
+install curl
+install wget
+install axel
+install cowsay
+install ack
+install most
+install mtr
+install rsync
+install lftp
+install p7zip
+install pwgen
+install youtube-dl
+
+# main dev stuff
+install ruby
+install python
+install node
+install git
+install git-flow
+install hub
+cask install chefdk
+cask install vagrant
+cask install virtualbox
+
+# php stuff
+install php55
+install php55-mcrypt
+install php55-opcache
+install php55-xdebug
+install php56
+install php-version
+install composer
+install wp-cli
+install phpmd
+install phpunit
+install behat
+
+# misc dev
+install httrack
+install colordiff
+install ssh-copy-id
+install mysql
+install sqlite
+install icu4c
+install diffutils
+install phantomjs
+install casperjs
+install jq
+install ohcount
+
+# multimedia tools - bins
+install exiftool
+install kindlegen
+install mplayer
+install ffmpeg
+install gd
+install imagemagick
+install jpegoptim
+install optipng
+install webp
+
+# devices
+install android-platform-tools
+cask install android-file-transfer
+cask install installhorndis
+cask install razer-synapse
+
+# quicklook
+cask install betterzipql
+cask install emin-webpquicklook
+cask install qlcolorcode
+cask install qlmarkdown
+cask install qlprettypatch
+cask install qlstephen
+cask install quicklook-csv
+cask install quicklook-json
+cask install webp-quicklook
+
+# dev apps
+cask install iterm2
+cask install phpstorm
+cask install sourcetree
+cask install textmate
+cask install sequel-pro
+cask install robomongo
+cask install mysqlworkbench
+cask install hipchat
+cask install cyberduck
+cask install coda
+cask install forklift
+cask install diffmerge
+
+# misc apps
+cask install alfred
+cask install flux
+cask install bartender
+cask install dropbox
+cask install rescuetime
+cask install easyfind
+cask install appcleaner
+cask install ccleaner
+cask install iconping
+cask install qbittorrent
+cask install rcdefaultapp
+cask install skype
+cask install teamviewer
+cask install the-unarchiver
+cask install google-earth
+cask install wakeonlan
+cask install grandperspective
+cask install integrity
+
+# browsers
+cask install google-chrome
+cask install google-chrome-beta
+cask install google-chrome-canary
+cask install firefox
+cask install firefox-beta
+cask install firefoxdeveloperedition
+
+# multimedia apps
+cask install vlc
+cask install vox
+cask install vox-preferences-pane
+cask install simple-comic
+cask install handbrake
+cask install calibre
+cask install imageoptim
+cask install mp4tools
+cask install mpeg-streamclip
+
+# games
+cask install steam
+cask install gog-downloader
+cask install mari0
+cask install not-tetris
+
+# office stuff
+cask install libreoffice
+cask install mou
+cask install pdfsam
