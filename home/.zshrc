@@ -1,21 +1,21 @@
-ZSH=$HOME/.oh-my-zsh
-
-ZSH_THEME="ys"
-# POWERLINE_HIDE_USER_NAME="true"
-# POWERLINE_HIDE_HOST_NAME="true"
-# POWERLINE_CURRENT_PATH="%1~"
-# POWERLINE_DATE_FORMAT=%D{%Y-%m-%d}
-# POWERLINE_RIGHT_A="$POWERLINE_DATE_FORMAT %f%F{234}"$'\ue0b2'"%f%k%K{234} "%(?.%F{green}✔.%F{red}✘)
-# POWERLINE_NO_BLANK_LINE=true
-
-# Uncomment following line if you want red dots to be displayed while waiting for completion
-COMPLETION_WAITING_DOTS="true"
-
-# oh-my-zsh plugins
-# !!! DONT use rbenv, it breaks the $PATH (rbenv already loaded in .profile)
-plugins=(git osx history-substring-search fasd brew gem composer vagrant symfony2)
-
-source $ZSH/oh-my-zsh.sh
+if source ~/.homesick/repos/dotfiles/antigen/antigen.zsh 2>/dev/null; then
+antigen use oh-my-zsh
+antigen bundles <<EOBUNDLES
+  zsh-users/zsh-syntax-highlighting
+  command-not-found
+  history-substring-search
+  fasd
+  osx
+  git
+  brew
+  gem
+  composer
+  vagrant
+  symfony2
+EOBUNDLES
+antigen theme ys
+antigen apply
+fi
 
 # override some oh-my-zsh aliases
 alias la='ls -AF'
@@ -23,7 +23,9 @@ alias  l='ls -lAh'
 alias ll='ls -lah'
 alias ls='ls -G'
 
-e() { subl "${1:-.}" }
+# textmate integration
+e() { mate "${1:-.}" }
+[[ -f /usr/local/bin/mate ]] && export EDITOR="/usr/local/bin/mate -w"
 
 pwcp() { echo $(echo -n $(pwgen -Bs ${1:-16}) | tee >(pbcopy)) copied to clipboard }
 
@@ -56,7 +58,7 @@ mac-spoof () {
 alias sourcetree='open -a SourceTree'
 
 # WP-CLI Bash completions
-if brew --prefix wp-cli > /dev/null; then
+if [[ -d `brew --prefix wp-cli 2>/dev/null` ]] then
   autoload bashcompinit
   bashcompinit
   source `brew --prefix wp-cli`/etc/bash_completion.d/wp-completion.bash
@@ -66,6 +68,6 @@ fi
 if which hub > /dev/null; then eval "$(hub alias -s)"; fi
 	
 # homeshick
-source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+source "$HOME/.homesick/repos/homeshick/homeshick.sh" 2>/dev/null
 
 export TERM="xterm-256color"

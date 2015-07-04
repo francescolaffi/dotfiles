@@ -3,10 +3,10 @@
 	pager = less -FXRS -x2
 	precomposeunicode = true
 [difftool "sourcetree"]
-	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
+	cmd = /opt/homebrew-cask/Caskroom/diffmerge/4.2.0.697/DiffMerge.app/Contents/MacOS/DiffMerge --nosplash \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+	cmd = /opt/homebrew-cask/Caskroom/diffmerge/4.2.0.697/DiffMerge.app/Contents/MacOS/DiffMerge --merge --result=\"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
 	trustExitCode = true
 [user]
 	name = Francesco Laffi
@@ -47,3 +47,5 @@
 	autosquash = true
 [push]
 	default = simple
+[mergetool]
+	keepBackup = false
