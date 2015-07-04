@@ -2,3 +2,13 @@
 !/.gitignore
 !/.gitmodules
 !/antigen
+
+!/.profile
+!/.zshenv
+!/.zshrc
+!/.bash_profile
+!/.bashrc
+
+!/gitignore_global
+!/gemrc
+!/Brewfile
