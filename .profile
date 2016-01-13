@@ -6,6 +6,9 @@ export LC_CTYPE=en_US.UTF-8
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications --fontdir=/Library/Fonts"
 
+# rbenv
+eval "$(rbenv init -)"
+
 # php version
 if source $(brew --prefix php-version)/php-version.sh 2>/dev/null; then
   [[ -r ~/.phps/global ]] && php-version `cat ~/.phps/global` >/dev/null
@@ -24,3 +27,6 @@ export PATH="$GOPATH/bin:$PATH"
 
 # heroku toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# letsencrypt
+export PATH="$HOME/.local/share/letsencrypt/bin:$PATH"
