@@ -7,7 +7,9 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export HOMEBREW_CASK_OPTS="--appdir=/Applications --fontdir=/Library/Fonts"
 
 # rbenv
-eval "$(rbenv init -)"
+if rbenv -v >/dev/null; then
+  eval "$(rbenv init -)"
+fi
 
 # php version
 if source $(brew --prefix php-version)/php-version.sh 2>/dev/null; then
