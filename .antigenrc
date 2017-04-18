@@ -1,0 +1,18 @@
+antigen use oh-my-zsh
+antigen bundles <<EOBUNDLES
+  command-not-found
+  common-aliases
+  composer
+  dircycle
+  fasd
+  gitfast
+  history-substring-search
+  httpie
+  osx
+  gem
+  symfony2
+  vagrant
+  zsh-users/zsh-syntax-highlighting
+EOBUNDLES
+antigen theme ys
+antigen apply

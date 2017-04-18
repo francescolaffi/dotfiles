@@ -12,6 +12,7 @@ if rbenv -v >/dev/null; then
 fi
 
 # php version
+# maybe have a look at asdf instead
 if source $(brew --prefix php-version)/php-version.sh 2>/dev/null; then
   [[ -r ~/.phps/global ]] && php-version `cat ~/.phps/global` >/dev/null
   php-global () { if php-version $1; then echo $1 > ~/.phps/global; fi }

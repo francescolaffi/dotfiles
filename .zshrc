@@ -1,20 +1,5 @@
 if source ~/antigen/antigen.zsh 2>/dev/null; then
-antigen use oh-my-zsh
-antigen bundles <<EOBUNDLES
-  zsh-users/zsh-syntax-highlighting
-  command-not-found
-  history-substring-search
-  fasd
-  osx
-  git
-  brew
-  gem
-  composer
-  vagrant
-  symfony2
-EOBUNDLES
-antigen theme ys
-antigen apply
+antigen init .antigenrc
 fi
 
 bindkey -e
