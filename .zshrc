@@ -17,6 +17,10 @@ antigen theme ys
 antigen apply
 fi
 
+bindkey -e
+bindkey "\e\e[C" forward-word
+bindkey "\e\e[D" backward-word
+
 # override some oh-my-zsh aliases
 alias la='ls -AF'
 alias  l='ls -lAh'
