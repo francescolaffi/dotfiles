@@ -8,11 +8,8 @@ antigen bundles <<EOBUNDLES
   gitfast
   history-substring-search
   httpie
-  osx
-  gem
-  symfony2
-  vagrant
   zsh-users/zsh-syntax-highlighting
+  unixorn/autoupdate-antigen.zshplugin
 EOBUNDLES
 antigen theme ys
 antigen apply

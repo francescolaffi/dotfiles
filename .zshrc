@@ -12,13 +12,9 @@ alias  l='ls -lAh'
 alias ll='ls -lah'
 alias ls='ls -G'
 
-# sublimetext integration
-e() { subl "${1:-.}" }
-[[ -f /usr/local/bin/subl ]] && export EDITOR="/usr/local/bin/subl -w"
-
 pwcp() { echo $(echo -n $(pwgen -Bs ${1:-16}) | tee >(pbcopy)) copied to clipboard }
 
-mac_reset () { sudo ifconfig en0 ether 98:fe:94:49:de:d6 }
+mac_reset () { sudo ifconfig en0 ether 38:f9:d3:9c:9f:e4 }
 mac_rand () { sudo ifconfig en0 ether `openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//'` }
 
 mac-spoof () {
@@ -45,16 +41,6 @@ mac-spoof () {
 }
 
 alias sourcetree='open -a SourceTree'
-
-# WP-CLI Bash completions
-if [[ -d `brew --prefix wp-cli 2>/dev/null` ]] then
-  autoload bashcompinit
-  bashcompinit
-  source `brew --prefix wp-cli`/etc/bash_completion.d/wp-completion.bash
-fi
-
-# git alias hub
-if which hub > /dev/null; then eval "$(hub alias -s)"; fi
 
 export TERM="xterm-256color"
 
