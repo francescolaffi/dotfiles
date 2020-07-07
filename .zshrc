@@ -15,6 +15,9 @@ alias  l='ls -lAh'
 alias ll='ls -lah'
 alias ls='ls -G'
 alias glom='git pull origin $(git_main_branch)'
+alias grbauto='GIT_SEQUENCE_EDITOR=: grbi --autosquash'
+alias gpmr='gpsup -o merge_request.create'
+alias gmwps='gpmr -o merge_request.merge_when_pipeline_succeeds'
 
 pwcp() { echo $(echo -n $(pwgen -Bs ${1:-16}) | tee >(pbcopy)) copied to clipboard }
 
