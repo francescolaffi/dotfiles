@@ -2,6 +2,9 @@ if source ~/antigen/antigen.zsh 2>/dev/null; then
 antigen init .antigenrc
 fi
 
+source "/usr/local/opt/kube-ps1/share/kube-ps1.sh"
+PS1='$(kube_ps1)'$PS1
+
 bindkey -e
 bindkey "\e\e[C" forward-word
 bindkey "\e\e[D" backward-word
@@ -11,6 +14,7 @@ alias la='ls -AF'
 alias  l='ls -lAh'
 alias ll='ls -lah'
 alias ls='ls -G'
+alias glom='git pull origin $(git_main_branch)'
 
 pwcp() { echo $(echo -n $(pwgen -Bs ${1:-16}) | tee >(pbcopy)) copied to clipboard }
 

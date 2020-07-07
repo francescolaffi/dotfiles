@@ -5,9 +5,9 @@ antigen bundles <<EOBUNDLES
   composer
   dircycle
   fasd
+  git
   gitfast
   history-substring-search
-  httpie
   zsh-users/zsh-syntax-highlighting
   unixorn/autoupdate-antigen.zshplugin
 EOBUNDLES
