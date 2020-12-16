@@ -15,7 +15,7 @@ alias  l='ls -lAh'
 alias ll='ls -lah'
 alias ls='ls -G'
 alias glom='git pull origin $(git_main_branch)'
-alias grbauto='GIT_SEQUENCE_EDITOR=: grbi --autosquash'
+alias grbauto='GIT_SEQUENCE_EDITOR=: grbi --autosquash `git rev-list --min-parents=2 --max-count=1 HEAD`'
 alias gpmr='gpsup -o merge_request.create'
 alias gmwps='gpmr -o merge_request.merge_when_pipeline_succeeds'
 
@@ -56,3 +56,8 @@ PERL5LIB="/Users/francesco/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PER
 PERL_LOCAL_LIB_ROOT="/Users/francesco/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/Users/francesco/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/francesco/perl5"; export PERL_MM_OPT;
+
+
+export CLOUDSDK_PYTHON="/usr/local/opt/python@3.8/libexec/bin/python"
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"

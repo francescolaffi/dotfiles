@@ -33,3 +33,6 @@ export PATH="/usr/local/heroku/bin:$PATH"
 
 # letsencrypt
 export PATH="$HOME/.local/share/letsencrypt/bin:$PATH"
+
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
