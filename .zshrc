@@ -1,4 +1,4 @@
-if source ~/antigen/antigen.zsh 2>/dev/null; then
+if source /usr/local/share/antigen/antigen.zsh 2>/dev/null; then
 antigen init .antigenrc
 fi
 
